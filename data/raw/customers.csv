@@ -1,0 +1,11 @@
+customer_id,name,age,email,city,purchase_amount
+1,Aarav,22,aarav@gmail.com,Pune,1200
+2,Meera,25,meera@gmail.com,Mumbai,2500
+3,Rohan,,rohan@gmail.com,Pune,1800
+4,Anaya,31,anaya@gmail.com,Nashik,3200
+5,Kabir,150,kabir@gmail.com,Pune,900
+6,Isha,28,isha@gmail.com,Mumbai,2100
+7,Arjun,24,arjun@gmail,Pune,1700
+8,Siya,27,siya@gmail.com,,2800
+9,Vihaan,22,vihaan@gmail.com,Pune,1200
+9,Vihaan,22,vihaan@gmail.com,Pune,1200
