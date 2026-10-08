@@ -6,3 +6,5 @@ missing = data.isnull().sum()
 
 print("Missing Values:")
 print(missing[missing > 0])
+duplicates = data.duplicated().sum()
+print(f"\nDuplicate rows: {duplicates}")
