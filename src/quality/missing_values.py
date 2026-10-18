@@ -10,3 +10,7 @@ duplicates = data.duplicated().sum()
 print(f"\nDuplicate rows: {duplicates}")
 duplicates = data.duplicated().sum()
 print(f"Duplicate rows: {duplicates}")
+invalid_age = data[(data["age"] < 0) | (data["age"] > 100)]
+
+print("\nInvalid Ages:")
+print(invalid_age[["name", "age"]])
