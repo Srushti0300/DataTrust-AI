@@ -14,3 +14,9 @@ invalid_age = data[(data["age"] < 0) | (data["age"] > 100)]
 
 print("\nInvalid Ages:")
 print(invalid_age[["name", "age"]])
+invalid_email = data[
+    ~data["email"].astype(str).str.match(r"^[\w.-]+@[\w.-]+\.[A-Za-z]{2,}$")
+]
+
+print("\nInvalid Emails:")
+print(invalid_email[["name", "email"]])
