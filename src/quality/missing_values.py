@@ -28,3 +28,10 @@ duplicate_ids = data[data["customer_id"].duplicated(keep=False)]
 
 print("\nDuplicate Customer IDs:")
 print(duplicate_ids[["customer_id", "name"]])
+total_missing = data.isnull().sum().sum()
+total_duplicates = data.duplicated().sum()
+
+print("\nData Quality Summary:")
+print(f"Total rows: {len(data)}")
+print(f"Total missing values: {total_missing}")
+print(f"Total duplicate rows: {total_duplicates}")
