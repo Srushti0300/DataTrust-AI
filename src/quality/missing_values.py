@@ -20,3 +20,7 @@ invalid_email = data[
 
 print("\nInvalid Emails:")
 print(invalid_email[["name", "email"]])
+negative_amounts = data[data["purchase_amount"] < 0]
+
+print("\nNegative Purchase Amounts:")
+print(negative_amounts[["name", "purchase_amount"]])
