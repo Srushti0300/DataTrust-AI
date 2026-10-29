@@ -20,3 +20,9 @@ empty_emails = data[
 
 print("\nEmpty Email Addresses:")
 print(empty_emails[["name", "email"]])
+invalid_age = data[
+    (data["age"] < 0) | (data["age"] > 100)
+]
+
+print("\nInvalid Customer Ages:")
+print(invalid_age[["name", "age"]])
