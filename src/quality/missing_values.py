@@ -26,3 +26,7 @@ invalid_age = data[
 
 print("\nInvalid Customer Ages:")
 print(invalid_age[["name", "age"]])
+negative_amounts = data[data["purchase_amount"] < 0]
+
+print("\nNegative Purchase Amounts:")
+print(negative_amounts[["name", "purchase_amount"]])
