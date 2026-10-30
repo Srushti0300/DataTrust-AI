@@ -48,3 +48,5 @@ extra_spaces = data[
 ]
 print("\nEmails With Extra Spaces:")
 print(extra_spaces[["name", "email"]])
+numeric_age = pd.to_numeric(data["age"], errors="coerce")
+print("\nNon-numeric Age Count:", (numeric_age.isnull() & data["age"].notnull()).sum())
