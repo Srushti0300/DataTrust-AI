@@ -52,3 +52,6 @@ numeric_age = pd.to_numeric(data["age"], errors="coerce")
 print("\nNon-numeric Age Count:", (numeric_age.isnull() & data["age"].notnull()).sum())
 numeric_amount = pd.to_numeric(data["purchase_amount"], errors="coerce")
 print("\nInvalid Purchase Amount Count:", numeric_amount.isnull().sum())
+missing_ids = data[data["customer_id"].isnull()]
+print("\nMissing Customer IDs:")
+print(missing_ids)
