@@ -32,3 +32,6 @@ print("\nNegative Purchase Amounts:")
 print(negative_amounts[["name", "purchase_amount"]])
 print("\nDuplicate Customer IDs:")
 print(data[data["customer_id"].duplicated(keep=False)])
+empty_names = data[data["name"].isnull() | (data["name"].str.strip() == "")]
+print("\nEmpty Customer Names:")
+print(empty_names)
