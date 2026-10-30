@@ -42,3 +42,9 @@ valid_email = data["email"].astype(str).str.match(
     r"^[\w.-]+@[\w.-]+\.[A-Za-z]{2,}$"
 )
 print("\nInvalid Email Count:", (~valid_email).sum())
+extra_spaces = data[
+    data["email"].notnull() &
+    (data["email"] != data["email"].str.strip())
+]
+print("\nEmails With Extra Spaces:")
+print(extra_spaces[["name", "email"]])
