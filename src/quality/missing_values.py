@@ -35,3 +35,6 @@ print(data[data["customer_id"].duplicated(keep=False)])
 empty_names = data[data["name"].isnull() | (data["name"].str.strip() == "")]
 print("\nEmpty Customer Names:")
 print(empty_names)
+empty_cities = data[data["city"].isnull() | (data["city"].str.strip() == "")]
+print("\nEmpty City Names:")
+print(empty_cities[["name", "city"]])
