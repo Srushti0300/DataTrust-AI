@@ -38,3 +38,7 @@ print(empty_names)
 empty_cities = data[data["city"].isnull() | (data["city"].str.strip() == "")]
 print("\nEmpty City Names:")
 print(empty_cities[["name", "city"]])
+valid_email = data["email"].astype(str).str.match(
+    r"^[\w.-]+@[\w.-]+\.[A-Za-z]{2,}$"
+)
+print("\nInvalid Email Count:", (~valid_email).sum())
