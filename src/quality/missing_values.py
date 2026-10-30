@@ -55,3 +55,6 @@ print("\nInvalid Purchase Amount Count:", numeric_amount.isnull().sum())
 missing_ids = data[data["customer_id"].isnull()]
 print("\nMissing Customer IDs:")
 print(missing_ids)
+negative_ages = data[data["age"] < 0]
+print("\nNegative Customer Ages:")
+print(negative_ages[["name", "age"]])
