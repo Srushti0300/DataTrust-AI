@@ -30,3 +30,5 @@ negative_amounts = data[data["purchase_amount"] < 0]
 
 print("\nNegative Purchase Amounts:")
 print(negative_amounts[["name", "purchase_amount"]])
+print("\nDuplicate Customer IDs:")
+print(data[data["customer_id"].duplicated(keep=False)])
