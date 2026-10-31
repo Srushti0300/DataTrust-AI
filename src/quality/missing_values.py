@@ -59,3 +59,4 @@ negative_ages = data[data["age"] < 0]
 print("\nNegative Customer Ages:")
 print(negative_ages[["name", "age"]])
 print("\nTotal Records:", len(data))
+print("\nTotal Columns:", len(data.columns))
