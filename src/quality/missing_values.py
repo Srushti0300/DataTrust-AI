@@ -64,3 +64,6 @@ print("\nDataset Columns:")
 print(data.columns.tolist())
 print("\nDataset Information:")
 data.info()
+average_age = data["age"].mean()
+
+print("\nAverage Customer Age:", round(average_age, 2))
