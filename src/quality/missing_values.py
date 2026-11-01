@@ -67,3 +67,6 @@ data.info()
 average_age = data["age"].mean()
 
 print("\nAverage Customer Age:", round(average_age, 2))
+average_purchase = data["purchase_amount"].mean()
+
+print("\nAverage Purchase Amount:", round(average_purchase, 2))
