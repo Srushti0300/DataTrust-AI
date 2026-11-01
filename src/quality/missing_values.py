@@ -70,3 +70,6 @@ print("\nAverage Customer Age:", round(average_age, 2))
 average_purchase = data["purchase_amount"].mean()
 
 print("\nAverage Purchase Amount:", round(average_purchase, 2))
+highest_purchase = data["purchase_amount"].max()
+
+print("\nHighest Purchase Amount:", highest_purchase)
