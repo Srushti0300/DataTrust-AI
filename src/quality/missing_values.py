@@ -81,3 +81,6 @@ print("\nTotal Purchase Amount:", total_purchase)
 youngest = data.loc[data["age"].idxmin()]
 print("\nYoungest Customer:")
 print(youngest[["name", "age"]])
+oldest = data.loc[data["age"].idxmax()]
+print("\nOldest Customer:")
+print(oldest[["name", "age"]])
