@@ -78,3 +78,6 @@ lowest_purchase = data["purchase_amount"].min()
 print("\nLowest Purchase Amount:", lowest_purchase)
 total_purchase = data["purchase_amount"].sum()
 print("\nTotal Purchase Amount:", total_purchase)
+youngest = data.loc[data["age"].idxmin()]
+print("\nYoungest Customer:")
+print(youngest[["name", "age"]])
