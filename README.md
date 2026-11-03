@@ -64,3 +64,24 @@ Data Trust Score
 AI Recommendations
     ↓
 Report / API
+📌 Project Status
+
+🚧 Currently under active development.
+
+Day 1
+Project architecture created
+Python environment configured
+Initial application created
+Git repository initialized
+👩‍💻 Author
+
+Srushti Jamdar
+
+---
+
+## 8. Install the dependencies
+
+With `(venv)` active:
+
+```bash
+pip install -r requirements.txt

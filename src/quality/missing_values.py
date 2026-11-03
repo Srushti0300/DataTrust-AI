@@ -84,3 +84,5 @@ print(youngest[["name", "age"]])
 oldest = data.loc[data["age"].idxmax()]
 print("\nOldest Customer:")
 print(oldest[["name", "age"]])
+median_age = data["age"].median()
+print("\nMedian Customer Age:", median_age)
